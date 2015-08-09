@@ -61,3 +61,513 @@ Aug 09 13:42 : client: [27] closed
 Aug 09 13:42 : client: [28] opened from [::1]:46091
 Aug 09 13:42 : client: [28] closed
 Aug 09 13:49 : avahi: Client Disconnected, will reconnect shortly
+Aug 09 14:55 : avahi: Service 'Music Player' successfully established.
+Aug 09 14:55 : client: [0] opened from [::1]:47005
+Aug 09 14:55 : client: [1] opened from [::1]:47006
+Aug 09 14:55 : client: [1] closed
+Aug 09 14:55 : client: [2] opened from [::1]:47007
+Aug 09 14:55 : client: [2] closed
+Aug 09 14:55 : client: [3] opened from [::1]:47008
+Aug 09 14:55 : client: [3] closed
+Aug 09 14:55 : client: [4] opened from [::1]:47009
+Aug 09 14:55 : client: [4] closed
+Aug 09 14:55 : client: [5] opened from [::1]:47010
+Aug 09 14:55 : client: [5] closed
+Aug 09 14:55 : client: [6] opened from [::1]:47011
+Aug 09 14:55 : client: [6] closed
+Aug 09 14:55 : client: [7] opened from [::1]:47012
+Aug 09 14:55 : client: [7] closed
+Aug 09 14:56 : avahi: Service 'Music Player' successfully established.
+Aug 09 14:56 : client: [0] opened from [::1]:47033
+Aug 09 14:57 : client: [0] closed
+Aug 09 14:57 : client: [1] opened from [::1]:47036
+Aug 09 14:57 : client: [1] closed
+Aug 09 14:57 : client: [2] opened from [::1]:47037
+Aug 09 14:57 : client: [2] closed
+Aug 09 14:58 : update: added /[untitled][5422][i-funbox.com].mp3
+Aug 09 14:58 : update: added /[untitled][3305][i-funbox.com].mp3
+Aug 09 14:58 : update: added /K-391 - Madagascar 2013.mp3
+Aug 09 14:58 : update: added /[untitled][4553][i-funbox.com].mp3
+Aug 09 14:58 : update: added /[untitled][7307][i-funbox.com].mp3
+Aug 09 14:58 : update: added /[untitled][4399][i-funbox.com].mp3
+Aug 09 14:58 : update: added /[untitled][4251][i-funbox.com].mp3
+Aug 09 14:58 : update: added /K-391 - Triple Rush.mp3
+Aug 09 14:58 : update: added /[untitled][3742][i-funbox.com]_(2).mp3
+Aug 09 14:58 : update: added /[untitled][3286][i-funbox.com].mp3
+Aug 09 14:58 : update: added /[untitled][3479][i-funbox.com].mp3
+Aug 09 14:58 : update: added /[untitled][9745][i-funbox.com].mp3
+Aug 09 14:58 : update: added /[untitled][12751][i-funbox.com].mp3
+Aug 09 14:58 : update: added /[untitled][9211][i-funbox.com].mp3
+Aug 09 14:58 : update: added /[untitled][8274][i-funbox.com].mp3
+Aug 09 14:58 : update: added /[untitled][8768][i-funbox.com].mp3
+Aug 09 14:58 : update: added /[untitled][5438][i-funbox.com].mp3
+Aug 09 14:58 : update: added /[untitled][4338][i-funbox.com].mp3
+Aug 09 14:58 : update: added /[untitled][8237][i-funbox.com].mp3
+Aug 09 14:58 : update: added /[untitled][81485][i-funbox.com].mp3
+Aug 09 14:58 : update: added /[untitled][3768][i-funbox.com].mp3
+Aug 09 14:58 : update: added /K-391 - Electro House 2012.mp3
+Aug 09 14:58 : update: added /[untitled][12143][i-funbox.com].mp3
+Aug 09 14:58 : update: added /[untitled][4373][i-funbox.com].mp3
+Aug 09 14:58 : update: added /K-391 - Allstars 2012.mp3
+Aug 09 14:58 : update: added /[untitled][2564][i-funbox.com].mp3
+Aug 09 14:58 : update: added /[untitled][3488][i-funbox.com].mp3
+Aug 09 14:58 : update: added /K-391 - Everybody (Radio Version).mp3
+Aug 09 14:58 : update: added /[untitled][5009][i-funbox.com].mp3
+Aug 09 14:58 : update: added /[untitled][7413][i-funbox.com].mp3
+Aug 09 14:58 : update: added /[untitled][7627][i-funbox.com].mp3
+Aug 09 14:58 : update: added /K-391 - Rypejakten 2013.mp3
+Aug 09 14:58 : update: added /[untitled][7102][i-funbox.com].mp3
+Aug 09 14:58 : update: added /[untitled][6764][i-funbox.com].mp3
+Aug 09 14:58 : update: added /[untitled][5782][i-funbox.com].mp3
+Aug 09 14:58 : update: added /[untitled][4676][i-funbox.com].mp3
+Aug 09 14:58 : update: added /k-391 - godzilla 2015 feat. marvin divine.mp3
+Aug 09 14:58 : update: added /K-391 - Sunshine.mp3
+Aug 09 14:58 : update: added /[untitled][3628][i-funbox.com].mp3
+Aug 09 14:58 : update: added /K-391 - Fantastic 2012.mp3
+Aug 09 14:58 : update: added /K-391 - Summertime.mp3
+Aug 09 14:58 : update: added /[untitled][3533][i-funbox.com].mp3
+Aug 09 14:58 : update: added /[untitled][3022][i-funbox.com].mp3
+Aug 09 14:58 : update: added /K-391 - Crazy bass 2012.mp3
+Aug 09 14:58 : update: added /[untitled][6825][i-funbox.com].mp3
+Aug 09 14:58 : update: added /K-391 - Skyline.mp3
+Aug 09 14:58 : update: added /[untitled][6495][i-funbox.com].mp3
+Aug 09 14:58 : update: added /[untitled][3179][i-funbox.com].mp3
+Aug 09 14:58 : update: added /[untitled][9088][i-funbox.com].mp3
+Aug 09 14:58 : update: added /K-391 - DollardĂĄsene 2013.mp3
+Aug 09 14:58 : update: added /[untitled][3582][i-funbox.com].mp3
+Aug 09 14:58 : update: added /K-391 - Rypejakten 2013 (Instrumental).mp3
+Aug 09 14:58 : update: added /[untitled][2342][i-funbox.com].mp3
+Aug 09 14:58 : update: added /[untitled][7860][i-funbox.com].mp3
+Aug 09 14:58 : update: added /[untitled][4166][i-funbox.com].mp3
+Aug 09 14:58 : update: added /[untitled][3576][i-funbox.com].mp3
+Aug 09 14:58 : update: added /[untitled][2635][i-funbox.com].mp3
+Aug 09 14:58 : update: added /K-391 - Boombox 2012.mp3
+Aug 09 14:58 : update: added /[untitled][5281][i-funbox.com].mp3
+Aug 09 14:58 : update: added /[untitled][2680][i-funbox.com].mp3
+Aug 09 14:58 : update: added /[untitled][3621][i-funbox.com].mp3
+Aug 09 14:58 : update: added /[untitled][8655][i-funbox.com].mp3
+Aug 09 14:58 : update: added /[untitled][3163][i-funbox.com].mp3
+Aug 09 14:58 : update: added /[untitled][4533][i-funbox.com].mp3
+Aug 09 14:58 : update: added /[untitled][3844][i-funbox.com].mp3
+Aug 09 14:58 : update: added /[untitled][6088][i-funbox.com].mp3
+Aug 09 14:58 : update: added /[untitled][4236][i-funbox.com].mp3
+Aug 09 14:58 : update: added /[untitled][4933][i-funbox.com].mp3
+Aug 09 14:58 : update: added /[untitled][4771][i-funbox.com].mp3
+Aug 09 14:58 : update: added /[untitled][9939][i-funbox.com].mp3
+Aug 09 14:58 : update: added /[untitled][5147][i-funbox.com].mp3
+Aug 09 14:58 : update: added /[untitled][3742][i-funbox.com].mp3
+Aug 09 14:58 : update: added /K-391 - Deep Blue.mp3
+Aug 09 14:58 : update: added /K-391 - Extreme Sport.mp3
+Aug 09 14:58 : update: added /[untitled][4197][i-funbox.com].mp3
+Aug 09 14:58 : update: added /[untitled][3503][i-funbox.com].mp3
+Aug 09 14:58 : update: added /K-391 - Sevje.mp3
+Aug 09 14:58 : update: added /[untitled][6283][i-funbox.com].mp3
+Aug 09 14:58 : update: added /[untitled][4216][i-funbox.com].mp3
+Aug 09 14:58 : update: added /[untitled][2673][i-funbox.com].mp3
+Aug 09 14:58 : update: added /[untitled][4617][i-funbox.com].mp3
+Aug 09 14:58 : update: added /K-391 - Farmers.mp3
+Aug 09 14:58 : update: added /K-391 - Solstice.mp3
+Aug 09 14:58 : update: added /K-391 - Nice Takeoff.mp3
+Aug 09 14:58 : update: added /[untitled][3798][i-funbox.com].mp3
+Aug 09 14:58 : update: added /K-391 - Hang Loose 2013.mp3
+Aug 09 14:58 : update: added /K-391 - Windows.mp3
+Aug 09 14:58 : update: added /[untitled][2478][i-funbox.com].mp3
+Aug 09 14:58 : update: added /[untitled][3712][i-funbox.com].mp3
+Aug 09 14:58 : update: added /K-391 - Don't Stop.mp3
+Aug 09 14:58 : update: added /[untitled][6613][i-funbox.com].mp3
+Aug 09 14:58 : update: added /[untitled][3351][i-funbox.com].mp3
+Aug 09 14:58 : update: added /[untitled][4465][i-funbox.com].mp3
+Aug 09 14:59 : client: [3] opened from [::1]:47042
+Aug 09 14:59 : client: [3] closed
+Aug 09 14:59 : client: [4] opened from [::1]:47043
+ALSA lib pcm_dmix.c:991:(snd_pcm_dmix_open) unable to create IPC semaphore
+Aug 09 14:59 : alsa_output: Failed to open "My ALSA Device" [alsa]: Failed to open ALSA device "default": Permission denied
+Aug 09 14:59 : output: Failed to open audio output
+Aug 09 14:59 : player: problems opening audio device while playing "[untitled][3479][i-funbox.com].mp3"
+ALSA lib pcm_dmix.c:991:(snd_pcm_dmix_open) unable to create IPC semaphore
+Aug 09 14:59 : alsa_output: Failed to open "My ALSA Device" [alsa]: Failed to open ALSA device "default": Permission denied
+Aug 09 14:59 : output: Failed to open audio output
+ALSA lib pcm_dmix.c:991:(snd_pcm_dmix_open) unable to create IPC semaphore
+Aug 09 14:59 : alsa_output: Failed to open "My ALSA Device" [alsa]: Failed to open ALSA device "default": Permission denied
+Aug 09 14:59 : output: Failed to open audio output
+Aug 09 14:59 : client: [5] opened from [::1]:47046
+Aug 09 14:59 : client: [5] closed
+Aug 09 14:59 : client: [6] opened from [::1]:47047
+Aug 09 14:59 : client: [6] closed
+Aug 09 14:59 : client: [7] opened from [::1]:47048
+Aug 09 14:59 : client: [7] closed
+Aug 09 14:59 : client: [8] opened from [::1]:47049
+Aug 09 14:59 : client: [8] closed
+Aug 09 14:59 : client: [9] opened from [::1]:47050
+Aug 09 14:59 : client: [9] closed
+Aug 09 14:59 : client: [10] opened from [::1]:47051
+Aug 09 14:59 : client: [10] closed
+Aug 09 14:59 : client: [11] opened from [::1]:47052
+Aug 09 14:59 : client: [11] closed
+ALSA lib pcm_dmix.c:991:(snd_pcm_dmix_open) unable to create IPC semaphore
+Aug 09 14:59 : alsa_output: Failed to open "My ALSA Device" [alsa]: Failed to open ALSA device "default": Permission denied
+Aug 09 14:59 : output: Failed to open audio output
+Aug 09 14:59 : client: [12] opened from [::1]:47054
+Aug 09 14:59 : client: [12] closed
+Aug 09 14:59 : client: [13] opened from [::1]:47055
+Aug 09 14:59 : client: [13] closed
+Aug 09 14:59 : client: [14] opened from [::1]:47056
+Aug 09 14:59 : client: [14] closed
+Aug 09 14:59 : client: [15] opened from [::1]:47057
+Aug 09 14:59 : client: [15] closed
+Aug 09 14:59 : client: [16] opened from [::1]:47058
+Aug 09 14:59 : client: [16] closed
+Aug 09 14:59 : client: [17] opened from [::1]:47059
+Aug 09 14:59 : client: [17] closed
+Aug 09 14:59 : client: [18] opened from [::1]:47060
+Aug 09 14:59 : client: [18] closed
+Aug 09 15:00 : player: played "[untitled][3479][i-funbox.com].mp3"
+Aug 09 15:00 : client: [4] closed
+Aug 09 15:00 : client: [19] opened from [::1]:47061
+Aug 09 15:00 : client: [19] closed
+Aug 09 15:00 : client: [20] opened from [::1]:47062
+Aug 09 15:00 : client: [20] closed
+Aug 09 15:00 : client: [21] opened from [::1]:47063
+Aug 09 15:00 : client: [21] closed
+Aug 09 15:00 : client: [22] opened from [::1]:47064
+Aug 09 15:00 : client: [22] closed
+Aug 09 15:00 : client: [23] opened from [::1]:47065
+Aug 09 15:00 : client: [23] closed
+Aug 09 15:00 : client: [24] opened from [::1]:47066
+Aug 09 15:00 : client: [24] closed
+Aug 09 15:00 : client: [25] opened from [::1]:47067
+Aug 09 15:00 : client: [25] closed
+Aug 09 15:00 : avahi: Client Disconnected, will reconnect shortly
+Aug 09 15:01 : avahi: Service 'Music Player' successfully established.
+Aug 09 15:01 : client: [0] opened from [::1]:40435
+Aug 09 15:01 : client: [1] opened from [::1]:40438
+Aug 09 15:01 : client: [1] closed
+Aug 09 15:01 : client: [2] opened from [::1]:40439
+Aug 09 15:01 : client: [2] closed
+Aug 09 15:01 : client: [3] opened from [::1]:40440
+Aug 09 15:01 : client: [3] closed
+Aug 09 15:01 : client: [4] opened from [::1]:40441
+Aug 09 15:01 : client: [4] closed
+Aug 09 15:01 : client: [5] opened from [::1]:40442
+Aug 09 15:01 : client: [5] closed
+Aug 09 15:01 : client: [6] opened from [::1]:40443
+Aug 09 15:01 : client: [6] closed
+Aug 09 15:01 : client: [7] opened from [::1]:40444
+Aug 09 15:01 : client: [7] closed
+Aug 09 15:01 : player: played "K-391 - Allstars 2012.mp3"
+Aug 09 15:01 : client: [0] closed
+Aug 09 15:02 : client: [8] opened from [::1]:40445
+Aug 09 15:02 : client: [8] closed
+Aug 09 15:02 : client: [9] opened from [::1]:40446
+Aug 09 15:02 : client: [9] closed
+Aug 09 15:02 : client: [10] opened from [::1]:40447
+Aug 09 15:02 : client: [10] closed
+Aug 09 15:02 : client: [11] opened from [::1]:40448
+Aug 09 15:02 : client: [11] closed
+Aug 09 15:02 : client: [12] opened from [::1]:40449
+Aug 09 15:02 : client: [12] closed
+Aug 09 15:02 : client: [13] opened from [::1]:40450
+Aug 09 15:02 : client: [13] closed
+Aug 09 15:02 : client: [14] opened from [::1]:40451
+Aug 09 15:02 : client: [14] closed
+Aug 09 15:03 : client: [15] opened from [::1]:40452
+Aug 09 15:03 : client: [15] closed
+Aug 09 15:03 : client: [16] opened from [::1]:40495
+Aug 09 15:03 : client: [16] closed
+Aug 09 15:03 : client: [17] opened from [::1]:40496
+Aug 09 15:03 : client: [17] closed
+Aug 09 15:03 : client: [18] opened from [::1]:40497
+Aug 09 15:03 : client: [18] closed
+Aug 09 15:03 : client: [19] opened from [::1]:40498
+Aug 09 15:03 : client: [19] closed
+Aug 09 15:03 : client: [20] opened from [::1]:40499
+Aug 09 15:03 : client: [20] closed
+Aug 09 15:03 : client: [21] opened from [::1]:40500
+Aug 09 15:03 : client: [21] closed
+Aug 09 15:03 : client: [22] opened from [::1]:40501
+Aug 09 15:03 : client: [22] closed
+Aug 09 15:04 : client: [23] opened from [::1]:40507
+Aug 09 15:04 : player: played "K-391 - Boombox 2012.mp3"
+Aug 09 15:04 : player: played "K-391 - Deep Blue.mp3"
+Aug 09 15:04 : player: played "K-391 - DollardĂĄsene 2013.mp3"
+Aug 09 15:04 : player: played "K-391 - Don't Stop.mp3"
+Aug 09 15:04 : player: played "K-391 - Everybody (Radio Version).mp3"
+Aug 09 15:04 : player: played "K-391 - Extreme Sport.mp3"
+Aug 09 15:04 : player: played "K-391 - Fantastic 2012.mp3"
+Aug 09 15:04 : player: played "K-391 - Farmers.mp3"
+Aug 09 15:04 : player: played "k-391 - godzilla 2015 feat. marvin divine.mp3"
+Aug 09 15:04 : player: played "K-391 - Hang Loose 2013.mp3"
+Aug 09 15:04 : player: played "K-391 - Madagascar 2013.mp3"
+Aug 09 15:04 : player: played "K-391 - Nice Takeoff.mp3"
+Aug 09 15:04 : player: played "K-391 - Rypejakten 2013 (Instrumental).mp3"
+Aug 09 15:04 : player: played "K-391 - Rypejakten 2013.mp3"
+Aug 09 15:04 : player: played "K-391 - Sevje.mp3"
+Aug 09 15:04 : player: played "K-391 - Skyline.mp3"
+Aug 09 15:04 : player: played "K-391 - Solstice.mp3"
+Aug 09 15:04 : player: played "K-391 - Summertime.mp3"
+Aug 09 15:04 : player: played "K-391 - Sunshine.mp3"
+Aug 09 15:04 : player: played "K-391 - Triple Rush.mp3"
+Aug 09 15:04 : player: played "K-391 - Windows.mp3"
+Aug 09 15:04 : player: played "K-391 - Crazy bass 2012.mp3"
+Aug 09 15:04 : player: played "K-391 - Electro House 2012.mp3"
+Aug 09 15:04 : client: [23] closed
+Aug 09 15:05 : client: [24] opened from [::1]:40517
+Aug 09 15:05 : client: [24] closed
+Aug 09 15:05 : client: [25] opened from [::1]:40518
+Aug 09 15:05 : client: [25] closed
+Aug 09 15:05 : client: [26] opened from [::1]:40519
+Aug 09 15:05 : client: [26] closed
+Aug 09 15:05 : client: [27] opened from [::1]:40520
+Aug 09 15:05 : client: [27] closed
+Aug 09 15:05 : client: [28] opened from [::1]:40521
+Aug 09 15:05 : client: [28] closed
+Aug 09 15:05 : client: [29] opened from [::1]:40522
+Aug 09 15:05 : client: [29] closed
+Aug 09 15:05 : client: [30] opened from [::1]:40523
+Aug 09 15:05 : client: [30] closed
+Aug 09 15:05 : client: [31] opened from [::1]:40524
+Aug 09 15:05 : client: [31] closed
+Aug 09 15:05 : client: [32] opened from [::1]:40525
+Aug 09 15:05 : client: [32] closed
+Aug 09 15:05 : client: [33] opened from [::1]:40526
+Aug 09 15:05 : client: [33] closed
+Aug 09 15:05 : client: [34] opened from [::1]:40527
+Aug 09 15:05 : client: [34] closed
+Aug 09 15:05 : client: [35] opened from [::1]:40528
+Aug 09 15:05 : client: [35] closed
+Aug 09 15:05 : client: [36] opened from [::1]:40529
+Aug 09 15:05 : client: [36] closed
+Aug 09 15:05 : client: [37] opened from [::1]:40530
+Aug 09 15:05 : client: [37] closed
+Aug 09 15:05 : client: [38] opened from [::1]:40531
+Aug 09 15:05 : client: [38] closed
+Aug 09 15:05 : client: [39] opened from [::1]:40532
+Aug 09 15:05 : client: [39] closed
+Aug 09 15:05 : client: [40] opened from [::1]:40533
+Aug 09 15:05 : client: [40] closed
+Aug 09 15:05 : client: [41] opened from [::1]:40534
+Aug 09 15:05 : client: [41] closed
+Aug 09 15:05 : client: [42] opened from [::1]:40535
+Aug 09 15:05 : client: [42] closed
+Aug 09 15:05 : client: [43] opened from [::1]:40536
+Aug 09 15:05 : client: [43] closed
+Aug 09 15:07 : client: [44] opened from [::1]:40589
+Aug 09 15:07 : client: [44] closed
+Aug 09 15:07 : client: [45] opened from [::1]:40592
+Aug 09 15:08 : client: [45] closed
+Aug 09 15:11 : player: played "[untitled][3742][i-funbox.com]_(2).mp3"
+Aug 09 15:24 : avahi: Service 'Music Player' successfully established.
+Aug 09 15:25 : client: [0] opened from [::1]:36935
+Aug 09 15:25 : client: [0] closed
+Aug 09 15:34 : player: played "[untitled][3742][i-funbox.com]_(2).mp3"
+Aug 09 15:34 : avahi: Service 'Music Player' successfully established.
+Aug 09 15:34 : client: [0] opened from [::1]:36517
+Aug 09 15:36 : update: removing [untitled][12143][i-funbox.com].mp3
+Aug 09 15:36 : update: removing [untitled][12751][i-funbox.com].mp3
+Aug 09 15:36 : update: removing [untitled][2342][i-funbox.com].mp3
+Aug 09 15:36 : update: removing [untitled][2478][i-funbox.com].mp3
+Aug 09 15:36 : update: removing [untitled][2564][i-funbox.com].mp3
+Aug 09 15:36 : update: removing [untitled][2635][i-funbox.com].mp3
+Aug 09 15:36 : update: removing [untitled][2673][i-funbox.com].mp3
+Aug 09 15:36 : update: removing [untitled][2680][i-funbox.com].mp3
+Aug 09 15:36 : update: removing [untitled][3022][i-funbox.com].mp3
+Aug 09 15:36 : update: removing [untitled][3163][i-funbox.com].mp3
+Aug 09 15:36 : update: removing [untitled][3286][i-funbox.com].mp3
+Aug 09 15:36 : update: removing [untitled][3305][i-funbox.com].mp3
+Aug 09 15:36 : update: removing [untitled][3351][i-funbox.com].mp3
+Aug 09 15:36 : update: removing [untitled][3479][i-funbox.com].mp3
+Aug 09 15:36 : update: removing [untitled][3488][i-funbox.com].mp3
+Aug 09 15:36 : update: removing [untitled][3503][i-funbox.com].mp3
+Aug 09 15:36 : update: removing [untitled][3533][i-funbox.com].mp3
+Aug 09 15:36 : update: removing [untitled][3576][i-funbox.com].mp3
+Aug 09 15:36 : update: removing [untitled][3582][i-funbox.com].mp3
+Aug 09 15:36 : update: removing [untitled][3621][i-funbox.com].mp3
+Aug 09 15:36 : update: removing [untitled][3628][i-funbox.com].mp3
+Aug 09 15:36 : update: removing [untitled][3712][i-funbox.com].mp3
+Aug 09 15:36 : update: removing [untitled][3768][i-funbox.com].mp3
+Aug 09 15:36 : update: removing [untitled][3798][i-funbox.com].mp3
+Aug 09 15:36 : update: removing [untitled][3844][i-funbox.com].mp3
+Aug 09 15:36 : update: removing [untitled][4197][i-funbox.com].mp3
+Aug 09 15:36 : update: removing [untitled][4216][i-funbox.com].mp3
+Aug 09 15:36 : update: removing [untitled][4251][i-funbox.com].mp3
+Aug 09 15:36 : update: removing [untitled][4338][i-funbox.com].mp3
+Aug 09 15:36 : update: removing [untitled][4399][i-funbox.com].mp3
+Aug 09 15:36 : update: removing [untitled][4465][i-funbox.com].mp3
+Aug 09 15:36 : update: removing [untitled][4533][i-funbox.com].mp3
+Aug 09 15:36 : update: removing [untitled][4553][i-funbox.com].mp3
+Aug 09 15:36 : update: removing [untitled][4617][i-funbox.com].mp3
+Aug 09 15:36 : update: removing [untitled][4676][i-funbox.com].mp3
+Aug 09 15:36 : update: removing [untitled][4933][i-funbox.com].mp3
+Aug 09 15:36 : update: removing [untitled][5009][i-funbox.com].mp3
+Aug 09 15:36 : update: removing [untitled][5147][i-funbox.com].mp3
+Aug 09 15:36 : update: removing [untitled][5281][i-funbox.com].mp3
+Aug 09 15:36 : update: removing [untitled][6088][i-funbox.com].mp3
+Aug 09 15:36 : update: removing [untitled][6283][i-funbox.com].mp3
+Aug 09 15:36 : update: removing [untitled][6613][i-funbox.com].mp3
+Aug 09 15:36 : update: removing [untitled][6825][i-funbox.com].mp3
+Aug 09 15:36 : update: removing [untitled][7102][i-funbox.com].mp3
+Aug 09 15:36 : update: removing [untitled][7413][i-funbox.com].mp3
+Aug 09 15:36 : update: removing [untitled][7627][i-funbox.com].mp3
+Aug 09 15:36 : update: removing [untitled][7860][i-funbox.com].mp3
+Aug 09 15:36 : update: removing [untitled][81485][i-funbox.com].mp3
+Aug 09 15:36 : update: removing [untitled][8237][i-funbox.com].mp3
+Aug 09 15:36 : update: removing [untitled][8768][i-funbox.com].mp3
+Aug 09 15:36 : update: removing [untitled][9211][i-funbox.com].mp3
+Aug 09 15:36 : update: removing [untitled][9745][i-funbox.com].mp3
+Aug 09 15:36 : update: removing K-391 - Allstars 2012.mp3
+Aug 09 15:36 : update: removing K-391 - Boombox 2012.mp3
+Aug 09 15:36 : update: removing K-391 - Deep Blue.mp3
+Aug 09 15:36 : update: removing K-391 - DollardĂĄsene 2013.mp3
+Aug 09 15:36 : update: removing K-391 - Don't Stop.mp3
+Aug 09 15:36 : update: removing K-391 - Everybody (Radio Version).mp3
+Aug 09 15:36 : update: removing K-391 - Extreme Sport.mp3
+Aug 09 15:36 : update: removing K-391 - Fantastic 2012.mp3
+Aug 09 15:36 : update: removing K-391 - Farmers.mp3
+Aug 09 15:36 : update: removing k-391 - godzilla 2015 feat. marvin divine.mp3
+Aug 09 15:36 : update: removing K-391 - Hang Loose 2013.mp3
+Aug 09 15:36 : update: removing K-391 - Madagascar 2013.mp3
+Aug 09 15:36 : update: removing K-391 - Nice Takeoff.mp3
+Aug 09 15:36 : update: removing K-391 - Rypejakten 2013 (Instrumental).mp3
+Aug 09 15:36 : update: removing K-391 - Rypejakten 2013.mp3
+Aug 09 15:36 : update: removing K-391 - Sevje.mp3
+Aug 09 15:36 : update: removing K-391 - Skyline.mp3
+Aug 09 15:36 : update: removing K-391 - Solstice.mp3
+Aug 09 15:36 : update: removing K-391 - Summertime.mp3
+Aug 09 15:36 : update: removing K-391 - Sunshine.mp3
+Aug 09 15:36 : update: removing K-391 - Triple Rush.mp3
+Aug 09 15:36 : update: removing K-391 - Windows.mp3
+Aug 09 15:36 : update: removing [untitled][8655][i-funbox.com].mp3
+Aug 09 15:36 : update: removing K-391 - Crazy bass 2012.mp3
+Aug 09 15:36 : update: removing K-391 - Electro House 2012.mp3
+Aug 09 15:36 : update: removing [untitled][3742][i-funbox.com]_(2).mp3
+Aug 09 15:36 : player: played "[untitled][3742][i-funbox.com]_(2).mp3"
+Aug 09 15:36 : update: removing [untitled][3742][i-funbox.com].mp3
+Aug 09 15:36 : update: removing [untitled][7307][i-funbox.com].mp3
+Aug 09 15:36 : update: removing [untitled][5782][i-funbox.com].mp3
+Aug 09 15:36 : client: [0] closed
+Aug 09 15:36 : update: removing [untitled][6495][i-funbox.com].mp3
+Aug 09 15:36 : update: removing [untitled][5422][i-funbox.com].mp3
+Aug 09 15:36 : update: removing [untitled][6764][i-funbox.com].mp3
+Aug 09 15:36 : update: removing [untitled][4166][i-funbox.com].mp3
+Aug 09 15:36 : update: removing [untitled][9939][i-funbox.com].mp3
+Aug 09 15:36 : update: removing [untitled][9088][i-funbox.com].mp3
+Aug 09 15:36 : update: removing [untitled][4373][i-funbox.com].mp3
+Aug 09 15:36 : update: removing [untitled][5438][i-funbox.com].mp3
+Aug 09 15:36 : update: removing [untitled][4236][i-funbox.com].mp3
+Aug 09 15:36 : update: removing [untitled][3179][i-funbox.com].mp3
+Aug 09 15:36 : update: removing [untitled][8274][i-funbox.com].mp3
+Aug 09 15:36 : update: removing [untitled][4771][i-funbox.com].mp3
+Aug 09 15:36 : update: added /120 čísel.mp3
+Aug 09 15:36 : update: added /Správny chlap.mp3
+Aug 09 15:36 : update: added /Windows.mp3
+Aug 09 15:36 : update: added /Jediný čo mám.mp3
+Aug 09 15:36 : update: added /Ahrix - Nova.mp3
+Aug 09 15:36 : update: added /Štesti.mp3
+Aug 09 15:36 : update: added /Sevje.mp3
+Aug 09 15:36 : update: added /Rypejakten (Instrumental).mp3
+Aug 09 15:36 : update: added /Where'd you go.mp3
+Aug 09 15:36 : update: added /Toulavá.mp3
+Aug 09 15:36 : update: added /Nelutujem.mp3
+Aug 09 15:36 : update: added /Alan Walker - Spectre.mp3
+Aug 09 15:36 : update: added /Skyline.mp3
+Aug 09 15:36 : update: added /Spolu navždy.mp3
+Aug 09 15:36 : update: added /I Won't Let Go.mp3
+Aug 09 15:36 : update: added /Farmers.mp3
+Aug 09 15:36 : update: added /Everybody (Radio Version).mp3
+Aug 09 15:36 : client: [1] opened from [::1]:36518
+Aug 09 15:36 : update: added /Street Musicians Perform with Homeless Man.mp3.m4a
+Aug 09 15:36 : update: added /Polety (feat. Sebastian).mp3
+Aug 09 15:36 : update: added /Keď všetko sa (k)rúti.mp3
+Aug 09 15:36 : update: added /Mind Plays.mp3
+Aug 09 15:36 : update: added /For You.mp3
+Aug 09 15:36 : update: added /Perfect World.mp3
+Aug 09 15:36 : update: added /Lucky One.mp3
+Aug 09 15:36 : update: added /Crazy.mp3
+Aug 09 15:36 : update: added /Love Me Like You Do (From "Fifty Shades Of Grey").mp3
+Aug 09 15:36 : update: added /Vianoce nemôžu byť bez teba.mp3
+Aug 09 15:36 : update: added /Je to fajn.mp3
+Aug 09 15:36 : update: added /Tak príď.mp3
+Aug 09 15:36 : update: added /Narodená pre výhru.mp3
+Aug 09 15:36 : update: added /Matura.mp3
+Aug 09 15:36 : update: added /Hviezdy.mp3
+Aug 09 15:36 : update: added /Boombox.mp3
+Aug 09 15:36 : update: added /Končím.mp3
+Aug 09 15:36 : update: added /Don't Stop.mp3
+Aug 09 15:36 : update: added /Úspešne zapojený.mp3
+Aug 09 15:36 : update: added /Electro House 2012.mp3
+Aug 09 15:36 : update: added /Špinavé objatie.mp3
+Aug 09 15:36 : update: added /Sunshine.mp3
+Aug 09 15:36 : update: added /I Can Wait Forever.mp3
+Aug 09 15:36 : update: added /Allstars.mp3
+Aug 09 15:36 : update: added /Mary.mp3
+Aug 09 15:36 : update: added /Ľudia.mp3
+Aug 09 15:36 : update: added /Tak prid.mp3
+Aug 09 15:36 : update: added /Celibát.mp3
+Aug 09 15:36 : update: added /Dôvera.mp3
+Aug 09 15:36 : update: added /Fantastic.mp3
+Aug 09 15:36 : update: added /Záverečná.mp3
+Aug 09 15:36 : update: added /Solstice.mp3
+Aug 09 15:36 : update: added /Som aký som.mp3
+Aug 09 15:36 : update: added /Lucy.m4a
+Aug 09 15:36 : update: added /Yellow.mp3
+Aug 09 15:36 : update: added /Ráno.mp3
+Aug 09 15:36 : update: added /Warriors.mp3
+Aug 09 15:36 : update: added /Lhůta záruční.mp3
+Aug 09 15:36 : update: added /Perfect.mp3
+Aug 09 15:36 : update: added /Lahká.mp3
+Aug 09 15:36 : update: added /Chasing Cars.m4a
+Aug 09 15:36 : update: added /Ty a já.mp3
+Aug 09 15:36 : update: added /About Me.mp3
+Aug 09 15:36 : update: added /Glorious.m4a
+Aug 09 15:36 : update: added /Impossible.mp3
+Aug 09 15:36 : update: added /The Rest Of Us.mp3
+Aug 09 15:36 : update: added /Naozaj Real.mp3
+Aug 09 15:36 : update: added /Mojích najlepších 15 rockov.mp3
+Aug 09 15:36 : update: added /Summertime.mp3
+Aug 09 15:36 : update: added /Madagascar.mp3
+Aug 09 15:36 : update: added /How To Save A Life.mp3
+Aug 09 15:36 : update: added /Nice Takeoff.mp3
+Aug 09 15:36 : update: added /Rypejakten.mp3
+Aug 09 15:36 : update: added /Extreme Sport.mp3
+Aug 09 15:36 : update: added /What If.mp3
+Aug 09 15:36 : update: added /Je tu niekto.mp3
+Aug 09 15:36 : update: added /Hero Of War.mp3
+Aug 09 15:36 : update: added /Welcome To My Life.mp3
+Aug 09 15:36 : update: added /Spomienky na budúcnosť.mp3
+Aug 09 15:36 : update: added /Awake and Alive.mp3
+Aug 09 15:36 : update: added /Alan Walker - Force.mp3
+Aug 09 15:36 : update: added /Zvládnem to.mp3
+Aug 09 15:36 : update: added /Angel With A Shotgun.mp3
+Aug 09 15:36 : update: added /See You Again.mp3
+Aug 09 15:36 : update: added /Triple Rush.mp3
+Aug 09 15:36 : update: added /Si nádej.mp3
+Aug 09 15:36 : update: added /My Heart.mp3
+Aug 09 15:36 : update: added /Deep Blue.mp3
+Aug 09 15:36 : update: added /Glorious - Piano Cover.m4a
+Aug 09 15:36 : update: added /Príliš rýchly.mp3
+Aug 09 15:36 : update: added /Strácam.mp3
+Aug 09 15:36 : update: added /Here Without You.mp3
+Aug 09 15:36 : update: added /Ži a nechaj žiť.mp3
+Aug 09 15:36 : update: added /Prečo je to tak.mp3
+Aug 09 15:36 : update: added /Kristínka.mp3
+Aug 09 15:36 : update: added /Godzilla.mp3
+Aug 09 15:36 : update: added /Hang Loose.mp3
+Aug 09 15:36 : update: added /Ešte raz.mp3
+Aug 09 15:36 : update: added /Wherever You Will Go.mp3
+Aug 09 15:36 : update: added /Crazy Bass.mp3
+Aug 09 15:36 : update: added /Dollardasene.mp3
+Aug 09 15:36 : update: added /Dokonalá.mp3
+Aug 09 15:36 : client: [2] opened from [::1]:36519
+Aug 09 15:36 : client: [2] closed
+Aug 09 16:05 : avahi: Client Disconnected, will reconnect shortly
+Aug 09 16:05 : avahi: Service 'Music Player' successfully established.
+Aug 09 16:05 : client: [0] opened from [::1]:55276
+Aug 09 16:06 : avahi: Client Disconnected, will reconnect shortly
+Aug 09 16:06 : avahi: Service 'Music Player' successfully established.
+Aug 09 16:06 : client: [0] opened from [::1]:42556
+Aug 09 16:07 : client: [0] closed
+Aug 09 16:07 : client: [1] opened from [::1]:42557
+Aug 09 16:07 : client: [1] closed
+Aug 09 16:08 : client: [2] opened from [::1]:42558
+Aug 09 16:08 : avahi: Service 'Music Player' successfully established.
+Aug 09 16:08 : client: [0] opened from [::1]:47615

@@ -177,6 +177,12 @@ alt + z
 alt + Tab
 	{$HOME/.config/bspwm/panel/launcher_menu $HOME/.config/bspwm/panel/launcher_apps, pkill dzen2}
 
+alt + shift + f
+        $HOME/.scripts/nautilus.sh
+
+alt + shift + m
+	ario
+
 Print
 	scrot -q 100
 

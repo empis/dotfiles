@@ -42,5 +42,7 @@ bspc rule -a Transmission-gtk pseudo_tiled=on
 bspc rule -a Conky sticky=on manage=off lower=on
 bspc rule -a astime sticky=on
 bspc rule -a feh floating=on manage=off
+bspc rule -a steam desktop=x
 
+mpd &
 /home/sunn/.config/bspwm/panel/panel &
