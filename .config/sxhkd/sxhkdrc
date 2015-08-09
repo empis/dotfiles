@@ -18,7 +18,7 @@ alt + w
 
 # Kill all detached tmux sessions
 alt + x
-	$HOME/scripts/tmux_purge
+	$HOME/.scripts/tmux_purge
 
 # Close window
 alt + shift + x
@@ -49,14 +49,14 @@ alt + shift {a,s,d,f}
 	bspc window -w {left.manual,down.manual,up.manual,right.manual}
 
 # Select windows, or move
-alt + {_,shift + }{h,j,k,l}
+alt + {_,shift + }{Left,Down,Up,Right}
 	bspc window -{f,s} {left,down,up,right} || bspc window -f {prev, prev, next, next}
 
 # Resize nodes
 alt + {a,f}
-	$HOME/scripts/window_move.sh {-p,-n} -x -s 20
+	$HOME/.scripts/window_move.sh {-p,-n} -x -s 20
 alt + {s,d}
-	$HOME/scripts/window_move.sh {-p,-n} -y -s 20
+	$HOME/.scripts/window_move.sh {-p,-n} -y -s 20
 
 # Move floating windows (requires baskerville's xdo)
 alt + {Left,Right,Up,Down}
@@ -160,10 +160,10 @@ alt + ctrl + Return
 	 bspc rule -a urxvt -o pseudo_tiled=on && urxvtc
 
 alt + r
-	$HOME/scripts/lens
+	$HOME/.scripts/lens
 
 alt + shift + r
-	$HOME/scripts/dmenu/spotlight
+	$HOME/.scripts/dmenu/spotlight
 
 alt + shift + b
 	firefox
