@@ -1,0 +1,63 @@
+Aug 09 00:31 : errno: Failed to open /home/empis/.mpd/mpdstate: No such file or directory
+Aug 09 00:31 : avahi: Service 'Music Player' successfully established.
+Aug 09 00:31 : avahi: Service 'Music Player' successfully established.
+Aug 09 11:49 : avahi: Service 'Music Player' successfully established.
+Aug 09 11:49 : client: [0] opened from [::1]:45896
+Aug 09 11:49 : alsa_mixer: Failed to read mixer for 'My ALSA Device': no such mixer control: PCM
+Aug 09 11:49 : client: [0] closed
+Aug 09 11:49 : client: [1] opened from [::1]:45897
+Aug 09 11:49 : client: [1] closed
+Aug 09 11:49 : client: [2] opened from [::1]:45900
+Aug 09 11:49 : client: [3] opened from 127.0.0.1:39096
+Aug 09 11:49 : client: [2] closed
+Aug 09 11:49 : client: [4] opened from [::1]:45913
+Aug 09 11:49 : client: [4] closed
+Aug 09 11:49 : client: [5] opened from [::1]:45914
+Aug 09 11:49 : client: [5] closed
+Aug 09 11:50 : client: [6] opened from [::1]:45917
+Aug 09 11:50 : client: [6] closed
+Aug 09 11:50 : client: [7] opened from [::1]:45918
+Aug 09 11:50 : client: [7] closed
+Aug 09 13:17 : client: [8] opened from [::1]:46037
+Aug 09 13:17 : client: [8] closed
+Aug 09 13:17 : client: [9] opened from [::1]:46038
+Aug 09 13:17 : client: [9] closed
+Aug 09 13:17 : client: [10] opened from [::1]:46041
+Aug 09 13:17 : client: [10] closed
+Aug 09 13:17 : client: [11] opened from [::1]:46042
+Aug 09 13:17 : client: [11] closed
+Aug 09 13:40 : client: [12] opened from [::1]:46063
+Aug 09 13:40 : client: [12] closed
+Aug 09 13:40 : client: [13] opened from [::1]:46064
+Aug 09 13:40 : client: [13] closed
+Aug 09 13:40 : client: [14] opened from [::1]:46067
+Aug 09 13:40 : client: [14] closed
+Aug 09 13:40 : client: [15] opened from [::1]:46068
+Aug 09 13:40 : client: [15] closed
+Aug 09 13:40 : client: [16] opened from [::1]:46069
+Aug 09 13:40 : client: [16] closed
+Aug 09 13:40 : client: [17] opened from [::1]:46070
+Aug 09 13:40 : client: [17] closed
+Aug 09 13:40 : client: [18] opened from [::1]:46071
+Aug 09 13:40 : client: [18] closed
+Aug 09 13:40 : client: [19] opened from [::1]:46072
+Aug 09 13:40 : client: [19] closed
+Aug 09 13:40 : client: [20] opened from [::1]:46073
+Aug 09 13:40 : client: [20] closed
+Aug 09 13:42 : client: [21] opened from [::1]:46084
+Aug 09 13:42 : client: [21] closed
+Aug 09 13:42 : client: [22] opened from [::1]:46085
+Aug 09 13:42 : client: [22] closed
+Aug 09 13:42 : client: [23] opened from [::1]:46086
+Aug 09 13:42 : client: [23] closed
+Aug 09 13:42 : client: [24] opened from [::1]:46087
+Aug 09 13:42 : client: [24] closed
+Aug 09 13:42 : client: [25] opened from [::1]:46088
+Aug 09 13:42 : client: [25] closed
+Aug 09 13:42 : client: [26] opened from [::1]:46089
+Aug 09 13:42 : client: [26] closed
+Aug 09 13:42 : client: [27] opened from [::1]:46090
+Aug 09 13:42 : client: [27] closed
+Aug 09 13:42 : client: [28] opened from [::1]:46091
+Aug 09 13:42 : client: [28] closed
+Aug 09 13:49 : avahi: Client Disconnected, will reconnect shortly
