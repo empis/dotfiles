@@ -15,11 +15,12 @@ YPOS="400"          # vertical positioning
 HEIGHT="30"         # window height
 WIDTH="250"         # window width
 BAR_WIDTH="165"     # width of volume bar
-ICON=~/.icons/spkr_01.xbm
+ICON=~/.icons/brightness.xbm
 FONT="-*-limey-*-*-*-*-*-*-*-*-*-*-*-*"
 brightness="/sys/class/backlight/intel_backlight/brightness"
 presbright=`cat /sys/class/backlight/intel_backlight/brightness`
 perc=`expr $presbright "*" 100 "/" 3000`
+sudopass="PASSWORD"
 
 #Probably do not customize
 PIPE="/tmp/dvolpipe"
@@ -44,12 +45,12 @@ case "$1" in
   '-i'|'--increase')
     [ -z "$2" ] && err "No argument specified for increase."
     [ -n "$(tr -d [0-9] <<<$2)" ] && err "The argument needs to be an integer."
-    echo $(( ${presbright} + ${2} )) > $brightness
+    echo $sudopass | sudo -S sh -c "echo $(( ${presbright} + ${2} )) > $brightness"
     ;;
   '-d'|'--decrease')
     [ -z "$2" ] && err "No argument specified for decrease."
     [ -n "$(tr -d [0-9] <<<$2)" ] && err "The argument needs to be an integer."
-    echo $(( ${presbright} - ${2} )) > $brightness
+    echo $sudopass | sudo -S sh -c "echo $(( ${presbright} - ${2} )) > $brightness"
     ;;
   ''|'-h'|'--help')
     usage
