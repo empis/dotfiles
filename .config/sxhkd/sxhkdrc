@@ -197,7 +197,7 @@ XF86AudioLowerVolume
 	dvol -d 5
 
 XF86AudioMute
-	$HOME/.config/bspwm/panel/notify_volume !
+	dvol -t
 
 XF86Sleep
 	pm-suspend
