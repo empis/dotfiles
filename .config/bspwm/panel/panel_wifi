@@ -30,4 +30,4 @@ case $PERC in
 	;;
 esac
 
-echo "%{F$COLOR_ICON}$icon%{F-}"
+echo "%{F$COLOR_ICON}$icon%{F-}%"

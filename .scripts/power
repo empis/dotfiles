@@ -1,0 +1,38 @@
+#!/bin/bash
+usage() {
+  echo "usage: power [option] [argument]"
+  echo
+  echo "Options:"
+  echo "     suspend 	- Suspend machine"
+  echo "     hibernate  - Hibernate machine"
+  echo "     off   	- Shutdown machine"
+  echo "     restart    - Restart"
+  echo "     -h, --help - display this"
+  exit
+}
+
+err() {
+  echo "$1"
+  exit 1
+}
+
+case "$1" in
+  'suspend')
+	systemctl suspend
+    ;;
+  'hibernate')
+	systemctl hibernate
+    ;;
+  'off')
+    shutdown -h now
+    ;;
+  'restart')
+    shutdown -r now
+    ;;
+  ''|'-h'|'--help')
+    usage
+    ;;
+  *)
+    err "Unrecognized option \`$1', see power --help"
+    ;;
+esac

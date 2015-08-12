@@ -45,4 +45,4 @@ bspc rule -a feh floating=on manage=off
 bspc rule -a steam desktop=x
 
 mpd &
-/home/sunn/.config/bspwm/panel/panel &
+$HOME/.config/bspwm/panel/panel | $HOME/.config/bspwm/panel/clickable

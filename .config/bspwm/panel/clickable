@@ -1,0 +1,18 @@
+#! /bin/bash
+
+while read -r line ; do
+	case $line in
+	menu)
+		sc dzen_menu.sh &
+		;;
+	network)
+                sc dzen_network.sh &
+                ;;
+	battery)
+                sc dzen_battery.sh &
+                ;;
+	time)
+                sc dzen_date.sh &
+                ;;
+	esac
+done

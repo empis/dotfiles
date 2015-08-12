@@ -45,17 +45,17 @@ alt + ctrl + {h,j,k,l}
 	bspc window -p {left,down,up,right}
 
 # Move window into presel position
-alt + shift {a,s,d,f}
-	bspc window -w {left.manual,down.manual,up.manual,right.manual}
+#alt + shift {a,s,d,f}
+#	bspc window -w {left.manual,down.manual,up.manual,right.manual}
 
 # Select windows, or move
-alt + {_,shift + }{Left,Down,Up,Right}
+alt + {_,shift + }{a,s,w,d}
 	bspc window -{f,s} {left,down,up,right} || bspc window -f {prev, prev, next, next}
 
 # Resize nodes
-alt + {a,f}
+alt + {Right,Left}
 	$HOME/.scripts/window_move.sh {-p,-n} -x -s 20
-alt + {s,d}
+alt + {Down,Up}
 	$HOME/.scripts/window_move.sh {-p,-n} -y -s 20
 
 # Move floating windows (requires baskerville's xdo)
@@ -166,7 +166,7 @@ alt + shift + r
 	$HOME/.scripts/dmenu/spotlight
 
 alt + shift + b
-	firefox
+	maxthon
 
 alt + shift + n
 	xterm
@@ -177,8 +177,8 @@ alt + z
 alt + Tab
 	{$HOME/.config/bspwm/panel/launcher_menu $HOME/.config/bspwm/panel/launcher_apps, pkill dzen2}
 
-alt + shift + f
-        $HOME/.scripts/nautilus.sh
+alt + shift + v
+        dbus-launch nautilus --no-desktop --browser
 
 alt + shift + m
 	ario
@@ -191,10 +191,10 @@ Print
 #
 
 XF86AudioRaiseVolume
-	$HOME/.config/bspwm/panel/notify_volume + 3
+	dvol -i 5
 
 XF86AudioLowerVolume
-	$HOME/.config/bspwm/panel/notify_volume - 3
+	dvol -d 5
 
 XF86AudioMute
 	$HOME/.config/bspwm/panel/notify_volume !
@@ -213,6 +213,9 @@ XF86AudioPrev
 
 XF86WebCam
 	sed -i 's/card [0-9]/card {0,1}/' $HOME/.asoundrc
+
+XF86MonBrightness{Up,Down}
+    brightness -{i,d} 300
 
 #
 # Dzen applets

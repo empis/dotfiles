@@ -14,8 +14,8 @@ FONT='-*-tamsyn-medium-*-normal-*-*-87-*-*-*-*-*-*'
 SEPARATOR_WIDTH=`expr $WIDTH - \( $WIDTH / 100 \) \* 20`
 
 #Position
-X=$(getcurpos | cut -c1-4)
-Y=$(getcurpos | cut -c5-10)
+X=10
+Y=10
 
 
 [ -f "$1" ] && MENUFILE="$1" || exit

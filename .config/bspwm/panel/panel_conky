@@ -7,5 +7,4 @@ update_interval 3
 update_interval_on_battery 5
 
 TEXT
-S${execi 1 ./panel_temperature}  ${execi 1 ./panel_wifi} ${wireless_essid wlp3s0}   ${execi 1 
-./panel_battery}${battery_percent}   ${time %H:%M} %{-u}
+S%{A:temp:}${execi 1 ./panel_temperature}%{A}  %{A:network:}${execi 1 ./panel_wifi} ${wireless_essid wlp3s0}%{A}   %{A:battery:}${execi 1 ./panel_battery}${battery_percent}%{A}   %{A:time:}${time %H:%M} %{-u}%{A}

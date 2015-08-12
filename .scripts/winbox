@@ -1,0 +1,2 @@
+#!/bin/bash
+wine "/home/empis/Programy/winbox.exe"
