@@ -2,7 +2,7 @@
 #
 # dvolbar - OSD Volume utility 
 #
-source /home/sunn/.scripts/bar/config.sh
+source $HOME/.scripts/bar/config.sh
 
 #Customize this stuff
 SECS="1"            # sleep $SECS
@@ -20,7 +20,6 @@ FONT="-*-limey-*-*-*-*-*-*-*-*-*-*-*-*"
 brightness="/sys/class/backlight/intel_backlight/brightness"
 presbright=`cat /sys/class/backlight/intel_backlight/brightness`
 perc=`expr $presbright "*" 100 "/" 3000`
-sudopass="PASSWORD"
 
 #Probably do not customize
 PIPE="/tmp/dvolpipe"

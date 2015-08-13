@@ -1,0 +1,10 @@
+#!/bin/bash
+source $HOME/.scripts/bar/config.sh
+if [ "`systemctl is-active sshd.service`" != "active" ] 
+then
+	echo $sudopass | sudo -S systemctl start sshd.service;
+	$HOME/.config/bspwm/panel/notify %{F#32CD32}%{F-} SSH server zapnutý
+else
+	echo $sudopass | sudo -S systemctl stop sshd.service;
+	$HOME/.config/bspwm/panel/notify %{F#DC143C}%{F-} SSH server vypnutý
+fi

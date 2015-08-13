@@ -1,0 +1,6 @@
+#!/bin/bash
+if [ $(cat /sys/class/net/enp0s25/operstate) = "up" ]; then
+  echo "Kábel"
+else
+  iwconfig wlp3s0 | sed -n "1p" | awk -F '"' '{print $2}'
+fi
