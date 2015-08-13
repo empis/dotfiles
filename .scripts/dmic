@@ -5,7 +5,7 @@
 source /home/sunn/.scripts/bar/config.sh
 
 #Customize this stuff
-IF="Master"         # audio channel: Master|PCM
+IF="Capture"         # audio channel: Master|PCM
 SECS="1"            # sleep $SECS
 #background="#ff9900"        # background colour of window
 #foreground="#ffffff"        # foreground colour of text/icon
@@ -16,7 +16,7 @@ YPOS="400"          # vertical positioning
 HEIGHT="30"         # window height
 WIDTH="250"         # window width
 BAR_WIDTH="165"     # width of volume bar
-ICON=~/.icons/spkr_01.xbm
+ICON=~/.icons/mic.xbm
 FONT="-*-limey-*-*-*-*-*-*-*-*-*-*-*-*"
 
 #Probably do not customize
@@ -28,7 +28,7 @@ err() {
 }
 
 usage() {
-  echo "usage: dvol [option] [argument]"
+  echo "usage: dmic [option] [argument]"
   echo
   echo "Options:"
   echo "     -i, --increase - increase volume by \`argument'"
@@ -57,7 +57,7 @@ case "$1" in
     usage
     ;;
   *)
-    err "Unrecognized option \`$1', see dvol --help"
+    err "Unrecognized option \`$1', see dmic --help"
     ;;
 esac
 

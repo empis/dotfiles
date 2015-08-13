@@ -190,6 +190,9 @@ Print
 # Media keys
 #
 
+XF86AudioMicMute
+	dmic -t
+
 XF86AudioRaiseVolume
 	dvol -i 5
 
@@ -199,8 +202,8 @@ XF86AudioLowerVolume
 XF86AudioMute
 	dvol -t
 
-XF86Sleep
-	pm-suspend
+XF86PSleep
+	power suspend
 
 XF86AudioPlay
 	$HOME/.config/bspwm/panel/notify_mpd -t 
