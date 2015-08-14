@@ -15,5 +15,5 @@ else
         | gdbar -bg $bar_bg -fg $bar_fg -h 1 -w 130`
 fi
 
-ICON='^i(/home/sunn/.icons/'"$ICON)"
+ICON='^i($HOME/.icons/'"$ICON)"
 echo "^fg($white0)$ICON^fg() $1 $PERCBAR ^fg($highlight)$USED^fg() / $TOTAL"

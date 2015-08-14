@@ -3,7 +3,7 @@
 background="#1f1f1f"
 foreground="#6d715e"
 highlight="#c0b18b"
-sudopass="PASSWORD"
+sudopass="qse153"
 
 #XPOS=$(xdotool getmouselocation | awk -F " " '{print $1}' | cut -d ":" -f 2)
 YPOS="11"

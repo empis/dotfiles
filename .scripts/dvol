@@ -2,7 +2,7 @@
 #
 # dvolbar - OSD Volume utility 
 #
-source /home/sunn/.scripts/bar/config.sh
+source $HOME/.scripts/bar/config.sh
 
 #Customize this stuff
 IF="Master"         # audio channel: Master|PCM

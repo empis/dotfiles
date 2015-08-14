@@ -53,5 +53,5 @@ if [[ $STATUS != "Discharging" ]]; then
 	ICON="ac.xbm"
 fi
 #color=""
-ICON='^i(/home/sunn/.icons/'"$ICON)"
+ICON='^i($HOME/.icons/'"$ICON)"
 echo "$color$ICON $BATBAR"

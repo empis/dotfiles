@@ -16,5 +16,5 @@ else
         | gdbar -bg $bar_bg -fg $bar_fg -h 1 -w 50`
 fi
 
-ICON='^i(/home/sunn/.icons/'"$ICON)"
+ICON='^i($HOME/.icons/'"$ICON)"
 echo "$ICON $PERCBAR"

@@ -2,7 +2,7 @@
 
 DMENU="dmenu -i"
 
-WALLPAPER_DIR="/home/sunn/Obrázky"
+WALLPAPER_DIR="$HOME/Obrázky"
 WALLPAPER=`ls $WALLPAPER_DIR \
 	| $DMENU -p "Choose a Wallpaper :"`
 

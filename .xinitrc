@@ -4,10 +4,10 @@ xset +fp /usr/share/fonts/local
 xset fp rehash
 xset b off 
 wmname LG3D
-xcalib /home/sunn/.x230.icm &
+xcalib $HOME/.x230.icm &
 xsetroot -cursor_name left_ptr &
 xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape' &
-hsetroot -fill /home/sunn/Obrázky/wallpaper.jpg &
+hsetroot -fill $HOME/Obrázky/wallpaper.jpg &
 unclutter -grab -noevents -root &
 urxvtd &
 
@@ -21,4 +21,4 @@ if [[ "`acpi -b | awk '{gsub(/,/,""); print $3}'`" != "Discharging" ]]; then
 	compton &
 fi
 
-exec /home/sunn/.scripts/bspwm-launch
+exec $HOME/.scripts/bspwm-launch
