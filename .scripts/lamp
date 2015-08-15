@@ -1,0 +1,12 @@
+#!/bin/bash
+source $HOME/.scripts/bar/config.sh
+if [ "`systemctl is-active httpd`" != "active" ] || [ "`systemctl is-active mysqld`" != "active" ]
+then
+	echo $sudopass | sudo -S systemctl start httpd &
+	echo $sudopass | sudo -S systemctl start mysqld &
+	$HOME/.config/bspwm/panel/notify %{F#32CD32}%{F-} LAMP server zapnutý
+else
+	echo $sudopass | sudo -S systemctl stop httpd &
+        echo $sudopass | sudo -S systemctl stop mysqld &
+	$HOME/.config/bspwm/panel/notify %{F#DC143C}%{F-} LAMP server vypnutý
+fi

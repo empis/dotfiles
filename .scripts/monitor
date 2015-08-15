@@ -1,0 +1,70 @@
+#!/bin/bash
+
+err() {
+  echo "$1"
+  exit 1
+}
+
+usage() {
+  echo "usage: monitor [option] [argument]"
+  echo
+  echo "Options:"
+  echo "     laptop, --increase - increase volume by \`argument'"
+  echo "     external, --decrease - decrease volume by \`argument'"
+  echo "     mirror   - toggle mute on and off"
+  echo "     -h, --help     - display this"
+  exit
+}
+
+#Argument Parsing
+case "$1" in
+  'laptop')
+    xrandr --output "LVDS1" --auto --output "VGA1" --off --output "DP1" --off
+    monitor=$(bspc query -M)
+    i=2
+    for monitor in ${monitor//1}; do
+    	bspc monitor $monitor \
+        	-r $i/{i,ii,iii,iv,v,vi,vii,viii,ix,x}
+    	let i++
+    done
+    NMON=$i
+    unset i
+    $HOME/.config/bspwm/panel/notify %{F#32CD32}%{F-} Laptop
+    ;;
+  'external')
+    xrandr --output "LVDS1" --off --output "VGA1" --auto --output "DP1" --auto
+    bspc monitor 1 -r 1/{i,ii,iii,iv,v,vi,vii,viii,ix,x}
+    monitor=$(bspc query -M)
+    i=2
+    for monitor in ${monitor//1}; do
+        bspc monitor $monitor \
+                -d $i/{i,ii,iii,iv,v,vi,vii,viii,ix,x}
+        let i++
+    done
+    NMON=$i
+    unset i
+    $HOME/.config/bspwm/panel/notify %{F#32CD32}%{F-} External
+    ;;
+  'mirror')
+    xrandr --output "LVDS1" --auto --output "VGA1" --auto --same-as LVDS1 --output "DP1" --auto --same-as LVDS1
+    $HOME/.config/bspwm/panel/notify %{F#32CD32}%{F-} Mirror
+    ;;
+  'normal')
+    $HOME/.screenlayout/default.sh
+    i=1
+    for monitor in $(bspc query -M); do
+        bspc monitor $monitor \
+                -d $i/{i,ii,iii,iv,v,vi,vii,viii,ix,x}
+        let i++
+    done
+    NMON=$i
+    unset i
+    $HOME/.config/bspwm/panel/notify %{F#32CD32}%{F-} Normal
+    ;;
+  ''|'-h'|'--help')
+    usage
+    ;;
+  *)
+    err "Unrecognized option \`$1', see dvol --help"
+    ;;
+esac

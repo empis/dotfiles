@@ -14,7 +14,7 @@ urxvtd &
 if [[ -z `xrandr | grep " connected" | grep 'VGA'` ]]; then
 	echo "No monitor found" &
 else
-	xrandr --output VGA1 --auto --above LVDS1 &
+	$HOME/.screenlayout/default.sh &
 fi
 
 if [[ "`acpi -b | awk '{gsub(/,/,""); print $3}'`" != "Discharging" ]]; then

@@ -6,7 +6,7 @@ bspc config window_gap          2
 i=1
 for monitor in $(bspc query -M); do
 bspc monitor $monitor \
-        -n "$i" \
+	-n $i \
         -d $i/{i,ii,iii,iv,v,vi,vii,viii,ix,x}
     let i++
 done
@@ -42,7 +42,7 @@ bspc rule -a Transmission-gtk pseudo_tiled=on
 bspc rule -a Conky sticky=on manage=off lower=on
 bspc rule -a astime sticky=on
 bspc rule -a feh floating=on manage=off
-bspc rule -a steam desktop=x
+bspc rule -a steam desktop=^10
 
 mpd &
 $HOME/.config/bspwm/panel/panel | $HOME/.config/bspwm/panel/clickable
