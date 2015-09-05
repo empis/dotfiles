@@ -10,10 +10,22 @@ cpuutilsystem=$(iostat -c | sed -n "4p" | awk -F " " '{print $3}')
 cpuutilidle=$(iostat -c | sed -n "4p" | awk -F " " '{print $6}')
 ramtotal=$(free -m | sed -n "2p" | awk -F " " '{print $4}')
 ramused=$(free -m | sed -n "2p" | awk -F " " '{print $3}')
-
+uptime=$(</proc/uptime)
+uptime=${uptime//.*}
+secs=$((${uptime}%60))
+mins=$((${uptime}/60%60))
+hours=$((${uptime}/3600%24))
+days=$((${uptime}/86400))
+uptime="${mins}m"
+if [ "${hours}" -ne "0" ]; then
+	uptime="${hours}h ${uptime}"
+fi
+if [ "${days}" -ne "0" ]; then
+	uptime="${days}d ${uptime}"
+fi
 kernel="^fg($white0)^i($HOME/.icons/arch_10x10.xbm)^fg() Kernel ^fg($highlight)$(uname -r)"
 packages="^fg($white0)^i($HOME/.icons/pacman.xbm)^fg() Balíky ^fg($highlight)$(pacman -Q | wc -l)"
-uptime="^fg($white0)^i($HOME/.icons/net_up_01.xbm)^fg() Uptime ^fg($highlight)$(uptime | awk '{gsub(/,/,""); print $3}')"
+uptime="^fg($white0)^i($HOME/.icons/net_up_01.xbm)^fg() Uptime ^fg($highlight)$uptime"
 
 hddtitle=$(df -h | head -1)
 hddtotal=$(df -h --total | tail -1)

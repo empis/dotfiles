@@ -1,9 +1,9 @@
 #!/bin/bash
 source $(dirname $0)/config.sh
 
-FREE=`free -m | awk 'NR == 2 {gsub(/%/,""); print $4}'`
+USED=`free -m | awk 'NR == 2 {gsub(/%/,""); print $3}'`
 MAX=`free -m | awk 'NR == 2 {gsub(/%/,""); print $2}'`
-PERC=`echo $FREE*100/$MAX | bc`
+PERC=`echo $USED*100/$MAX | bc`
 
 ICON="mem.xbm"
 if [[ $PERC -gt 75 ]]; then
@@ -15,4 +15,4 @@ else
 fi
 
 ICON='^i($HOME/.icons/'"$ICON)"
-echo "^fg($white0)$ICON^fg() Volné $PERCBAR ^fg($highlight)$PERC%"
+echo "^fg($white0)$ICON^fg() Vyuzité $PERCBAR ^fg($highlight)$PERC%"
