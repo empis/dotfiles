@@ -18,7 +18,7 @@ err() {
 
 case "$1" in
   'suspend')
-	systemctl suspend
+	systemctl hybrid-sleep
     ;;
   'hibernate')
 	systemctl hibernate
