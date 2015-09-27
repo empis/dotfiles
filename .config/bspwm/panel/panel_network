@@ -1,6 +1,8 @@
 #!/bin/bash
+source $(dirname $0)/config
+
 if [ $(cat /sys/class/net/enp0s25/operstate) = "up" ]; then
-  echo "Kábel"
+  echo "Kábel $DIV"
 else
-  iwconfig wlp3s0 | sed -n "1p" | awk -F '"' '{print $2}'
+  echo "$(iwconfig wlp3s0 | sed -n "1p" | awk -F '"' '{print $2}') $DIV"
 fi

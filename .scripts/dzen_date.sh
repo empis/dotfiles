@@ -1,7 +1,7 @@
 #!/bin/bash
 source $(dirname $0)/bar/config.sh
-XPOS=$((1250 + $XOFFSET))
 WIDTH="110"
+XPOS=$(($XPOS-$WIDTH-10))
 LINES="12"
 
 #totaldays=$(date +"%j")

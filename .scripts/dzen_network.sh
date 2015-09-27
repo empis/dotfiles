@@ -1,8 +1,8 @@
 #!/bin/bash
 source $(dirname $0)/bar/config.sh
-XPOS=$((1030 + $XOFFSET))
 WIDTH="180"
 LINES="8"
+XPOS=$(($XPOS-$WIDTH-10))
 if [ $(cat /sys/class/net/enp0s25/operstate) = "up" ]; then
   essid=Kábel
   mac=$(ifconfig enp0s25 | grep -o -E '([[:xdigit:]]{1,2}:){5}[[:xdigit:]]{1,2}')

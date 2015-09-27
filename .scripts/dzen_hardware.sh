@@ -1,8 +1,8 @@
 #!/bin/bash
 source $(dirname $0)/bar/config.sh
-XPOS=$((1080 + $XOFFSET))
 WIDTH="260"
 LINES="15"
+XPOS=$(($XPOS-$WIDTH-10))
 
 cputemp="^fg($white0)^i($HOME/.icons/temp.xbm)^fg() Teplota ^fg($highlight)$(sensors | grep "temp1" | cut -d'+' -f2 | head -c2)°C"
 cpuutiluser=$(iostat -c | sed -n "4p" | awk -F " " '{print $1}')

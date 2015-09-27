@@ -1,7 +1,7 @@
 #!/bin/bash
 source $(dirname $0)/bar/config.sh
-XPOS=$((1092 + $XOFFSET))
 WIDTH="15"
+XPOS=$(($XPOS-$WIDTH-10))
 LINES="13"
 
 vol=$(amixer get Master | egrep -o "[0-9]+%" | head -1 | egrep -o "[0-9]*")

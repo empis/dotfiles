@@ -4,7 +4,7 @@ source $(dirname $0)/config
 temp=$((`sensors | grep "Physical id 0" | cut -d'+' -f2 | head -c2`))
 
 if [[ $temp > 49 ]]; then
-	output="%{F$COLOR_ICON}  %{F-}$temp°"
+	output="%{F$COLOR_ICON}  %{F-}$temp° $DIV"
 else
 	output=""
 fi

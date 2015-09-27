@@ -1,0 +1,1 @@
+ACTION=="change", SUBSYSTEM=="drm", ENV{HOTPLUG}=="1", ENV{XAUTHORITY}="/home/empis/.Xauthority", RUN+="/home/empis/.scripts/monitorhotplug.sh"

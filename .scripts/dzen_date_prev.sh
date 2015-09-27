@@ -1,8 +1,8 @@
 #!/bin/bash
 source $(dirname $0)/bar/config.sh
-XPOS=$((1250 + $XOFFSET - 115))
 WIDTH="110"
 LINES="10"
+XPOS=$(($XPOS-$WIDTH-10))
 
 datea=$(date +%a)
 dateb=$(date +%b)

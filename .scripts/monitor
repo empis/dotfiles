@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 err() {
   echo "$1"
@@ -9,90 +9,43 @@ usage() {
   echo "usage: monitor [option] [argument]"
   echo
   echo "Options:"
-  echo "     laptop, --increase - increase volume by \`argument'"
-  echo "     external, --decrease - decrease volume by \`argument'"
-  echo "     mirror   - toggle mute on and off"
+  echo "     laptop - Only laptop monitor"
+  echo "     vga - Only VGA monitor"
+  echo "     mirror   - mirror"
   echo "     -h, --help     - display this"
   exit
-}
-
-vgaconnect() {
-	primarymonitor=$(cat $HOME/.config/bspwm/primarymonitor)
-        if [[ `xrandr | grep " connected" | grep "VGA"` ]]; then
-                bspc monitor $primarymonitor -d $primarymonitor/{i,ii,iii,iv,v,vi,vii,viii,ix,x}
-                monitor=$(bspc query -M);
-                for monitor in ${monitor//$primarymonitor}; do
-                        bspc monitor $monitor \
-                                -d $monitor/i
-                done
-                $HOME/.screenlayout/default.sh
-	fi
-}
-
-vgadisconnect() {
-	bspc monitor VGA1 -d VGA1/i
-	bspc monitor LVDS1 -f
-	bspc desktop VGA1/i -m focused
-	bspc monitor LVDS1 -d LVDS1/{i,ii,iii,iv,v,vi,vii,viii,ix,x}
 }
 
 #Argument Parsing
 case "$1" in
   'laptop')
-    xrandr --output "LVDS1" --auto --output "VGA1" --off --output "DP1" --off
-    echo $(bspc query -M -m)
-    monitor=$(bspc query -M)
-    for monitor in ${monitor//LVDS1}; do
-    	bspc monitor $monitor \
-        	-r $monitor/{i,ii,iii,iv,v,vi,vii,viii,ix,x}
-    done
-    echo $(bspc query -M -m)
-    $HOME/.config/bspwm/panel/notify %{F#32CD32}%{F-} Laptop
-    bspc monitor LVDS1 -d LVDS1/{i,ii,iii,iv,v,vi,vii,viii,ix,x}
-    echo $(bspc query -M -m)    
-   ;;
-  'external')
-    xrandr --output "LVDS1" --off --output "VGA1" --auto --output "DP1" --auto
-    bspc monitor LVDS1 -r LVDS1/{i,ii,iii,iv,v,vi,vii,viii,ix,x}
-    monitor=$(bspc query -M)
-    for monitor in ${monitor//LVDS1}; do
-        bspc monitor $monitor \
-                -d $monitor/{i,ii,iii,iv,v,vi,vii,viii,ix,x}
-    done
-    $HOME/.config/bspwm/panel/notify %{F#32CD32}%{F-} External
-    ;;
+    	$HOME/.screenlayout/laptop.sh
+    	bspc monitor LVDS1 -d LVDS1/{i,ii,iii,iv,v,vi,vii,viii,ix,x}
+    	$HOME/.config/bspwm/panel/notify %{F#32CD32}%{F-} Laptop
+   	;;
+  'vga')
+    	while [ $(xrandr | grep -w VGA1  | awk -F'[ +]' '{print $2}') != "connected" ]
+    	do
+		echo "wait";
+    	done
+    	$HOME/.screenlayout/vga.sh
+    	bspc monitor VGA1 -d VGA1/{i,ii,iii,iv,v,vi,vii,viii,ix,x}
+    	$HOME/.config/bspwm/panel/notify %{F#32CD32}%{F-} External
+    	;;
   'mirror')
-    xrandr --output "LVDS1" --auto --output "VGA1" --auto --same-as LVDS1 --output "DP1" --auto --same-as LVDS1
-    $HOME/.config/bspwm/panel/notify %{F#32CD32}%{F-} Mirror
-    ;;
+    	xrandr --output "LVDS1" --auto --output "VGA1" --auto --same-as LVDS1 --output "DP1" --auto --same-as LVDS1
+    	$HOME/.config/bspwm/panel/notify %{F#32CD32}%{F-} Mirror
+    	;;
   'normal')
 	if [[ `xrandr | grep " connected" | grep "VGA"` ]]; then
-        	vgaconnect
-	else
-        	bspc monitor LVDS1 -d LVDS1/{i,ii,iii,iv,v,vi,vii,viii,ix,x}
+        	 $HOME/.screenlayout/normal.sh
 	fi
-    	$HOME/.config/bspwm/panel/notify %{F#32CD32}%{F-} Normal
+	for monitor in $(bspc query -M); do
+		bspc monitor $monitor \
+			        -d $monitor/{i,ii,iii,iv,v,vi,vii,viii,ix,x}
+	done
+	$HOME/.config/bspwm/panel/notify %{F#32CD32}%{F-} Normal
     	;;
-  'primary')
-	if [ -z $2 ]; then
-		$HOME/.config/bspwm/panel/notify %{F#32CD32}%{F-} No primary monitor set
-		exit 1
-	fi
-	echo $2 > $HOME/.config/bspwm/primarymonitor
-	primarymonitor=$(cat $HOME/.config/bspwm/primarymonitor)
-	if [[ `xrandr | grep " connected" | grep "$primarymonitor"` ]]; then
-        	vgaconnect
-	else
-        	bspc monitor LVDS1 -d LVDS1/{i,ii,iii,iv,v,vi,vii,viii,ix,x}
-	fi
-	$HOME/.config/bspwm/panel/notify %{F#32CD32}%{F-} Primary monitor set to $2
-  ;;
-  'connect')
-	vgaconnect
-  ;;
-  'disconnect')
-	vgadisconnect
-  ;;
   ''|'-h'|'--help')
     usage
     ;;

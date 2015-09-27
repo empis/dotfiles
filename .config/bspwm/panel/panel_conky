@@ -7,5 +7,4 @@ update_interval 3
 update_interval_on_battery 5
 
 TEXT
-S%{A:temp:}${execi 1 ./panel_temperature}%{A}  %{A:network:}${execi 1 ./panel_wifi} ${execi 1 
-./panel_network}%{A}   %{A:battery:}${execi 1 ./panel_battery}${battery_percent}%{A}   %{A:time:}${time %H:%M} %{-u}%{A}
+S%{A:temp:}${execi 1 ./panel_temperature}%{A} %{A:network:}${execi 1 ./panel_wifi} ${execi 1 ./panel_network}%{A} %{A:battery:}${execi 1 ./panel_battery}%{A} %{A:pacman:}${execi 1 ./panel_pacman}%{A} %{A:hw:}${execi 1 ./panel_ram} %{A}%{A:time:}${time %H:%M} %{-u}%{A}

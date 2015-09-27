@@ -14,5 +14,11 @@ while read -r line ; do
 	time)
                 sc dzen_date.sh &
                 ;;
+	pacman)
+                sc dzen_pacman.sh &
+                ;;
+	hw)
+                sc dzen_hardware.sh &
+                ;;
 	esac
 done

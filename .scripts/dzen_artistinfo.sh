@@ -1,7 +1,7 @@
 #!/bin/bash
 source $(dirname $0)/bar/config.sh
-XPOS=$((950 + $XOFFSET))
 WIDTH="375"
+XPOS=$(($XPOS-$WIDTH-10))
 
 url=http://www.last.fm/music/$(mpc current -f %artist% | sed 's/[ \/]/+/g')
 urlalbum=$url/$(mpc current -f %album% | sed 's/[ \/]/+/g')

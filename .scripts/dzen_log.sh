@@ -1,9 +1,8 @@
 #!/bin/bash
 source $(dirname $0)/bar/config.sh
-XPOS=$((866 + $XOFFSET))
 WIDTH="500"
 LINES="56"
-
+XPOS=$(($XPOS-$WIDTH-10))
 
 date=$(date --rfc-3339=date)
 dmesg=$(dmesg | tail -n25 | cut -b16-)

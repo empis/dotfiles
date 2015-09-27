@@ -1,9 +1,8 @@
 #!/bin/bash
 source $(dirname $0)/bar/config.sh
-XPOS=$((1120 + $XOFFSET))
 WIDTH="80"
 LINES="2"
-
+XPOS=$(($XPOS-$WIDTH-10))
 
 battime=$(acpi -b | sed -n "1p" | awk -F " " '{print $5}')
 batperc=$(acpi -b | sed -n "1p" | awk -F " " '{print $4}' | head -c3)

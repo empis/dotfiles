@@ -9,7 +9,7 @@ alt + shift + q
 # Toggle panels
 alt + q
 	{pkill panel; pkill cat; pkill conky; bspc config top_padding 0 ,\
-	bspc config top_padding 14; $HOME/.config/bspwm/panel/panel | $HOME/.config/bspwm/panel/clickable & }
+	bspc config top_padding 16; $HOME/.config/bspwm/panel/panel | $HOME/.config/bspwm/panel/clickable & }
 
 
 # Workstation Monitor
@@ -64,7 +64,8 @@ alt + {Left,Right,Up,Down}
 
 # Resize floating windows
 alt + shift + {Left,Right,Up,Down}
-    xdo resize {-w -20,-w +20,-h -20,-h +20}    bspc window -e {left -10,down +10,up -10,right +10} || {right -10,up +10,down -10,left +10}
+    xdo resize {-w -20,-w +20,-h -20,-h +20}    bspc window -e {left -10,down +10,up -10,right +10} || {right 
+-10,up +10,down -10,left +10}
 
 # Move current window to largest space
 alt + Return
@@ -166,7 +167,7 @@ alt + shift + r
 	$HOME/.scripts/dmenu/spotlight
 
 alt + shift + b
-	maxthon
+	qutebrowser
 
 alt + shift + n
 	xterm

@@ -14,11 +14,7 @@ urxvtd &
 if [[ -z `xrandr | grep " connected" | grep 'VGA'` ]]; then
 	echo "No monitor found" &
 else
-	$HOME/.screenlayout/default.sh &
-fi
-
-if [[ "`acpi -b | awk '{gsub(/,/,""); print $3}'`" != "Discharging" ]]; then
-	compton &
+	$HOME/.screenlayout/vga.sh &
 fi
 
 exec $HOME/.scripts/bspwm-launch

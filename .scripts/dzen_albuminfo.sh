@@ -2,10 +2,10 @@
 source $(dirname $0)/bar/config.sh
 
 #XPOS=$(xdotool getmouselocation | awk -F " " '{print $1}' | cut -d ":" -f 2)
-XPOS=$((950 + $XOFFSET))
 YPOS="11"
 HEIGHT="12"
 WIDTH="375"
+XPOS=$(($XPOS-$WIDTH-10))
 
 url=http://www.last.fm/music/$(mpc current -f %artist% | sed 's/[ \/]/+/g')
 urlalbum=$url/$(mpc current -f %album% | sed 's/[ \/]/+/g')

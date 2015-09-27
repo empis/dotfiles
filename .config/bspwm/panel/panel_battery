@@ -63,4 +63,6 @@ case $BAT in
 esac
 
 # Create Bar
-echo "%{F$COLOR_ICON}$icon%{F-}% "
+bat=$(cat /sys/class/power_supply/BAT0/capacity)
+output="%{F$COLOR_ICON}$icon%{F-}% $bat"
+echo $output $DIV;

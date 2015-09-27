@@ -6,7 +6,7 @@ highlight="#c0b18b"
 sudopass="qse153"
 
 #XPOS=$(xdotool getmouselocation | awk -F " " '{print $1}' | cut -d ":" -f 2)
-XPOS=$(xrandr | grep -w connected  | awk -F'[ +]' '{print $1,$3}' | grep -w $(bspc query -M -m) | awk  '{print $2}' | cut -d 'x' -f1)
+XPOS
 YPOS="11"
 HEIGHT="12"
 XOFFSET=554

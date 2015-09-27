@@ -15,4 +15,4 @@ else
 fi
 
 ICON='^i($HOME/.icons/'"$ICON)"
-echo "^fg($white0)$ICON^fg() Vyuzité $PERCBAR ^fg($highlight)$PERC%"
+echo "^fg($white0)$ICON^fg() Využité $PERCBAR ^fg($highlight)$PERC%"

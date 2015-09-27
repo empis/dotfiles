@@ -1,7 +1,7 @@
 #!/bin/bash
 source $(dirname $0)/bar/config.sh
-XPOS=$((1200 + $XOFFSET))
 WIDTH="150"
+XPOS=$(($XPOS-$WIDTH-10))
 pacmanlines=$(pacman -Qu | wc -l)
 LINES=$(( $pacmanlines + 2 ))
 

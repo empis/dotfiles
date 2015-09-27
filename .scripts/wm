@@ -2,6 +2,7 @@
 
 sxhkd &
 bspwm
+compton --vsync opengl-swc --shadow-exclude 'n:a:Conky' -b &
 #while true ; do
 #	sxhkd &
 #	[ -e "$PANEL_FIFO" ] && rm "$PANEL_FIFO"

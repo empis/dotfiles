@@ -1,0 +1,7 @@
+#!/bin/bash
+source $(dirname $0)/config
+
+temp=$(pacman -Qu | wc -l)
+	output="%{F$COLOR_ICON} %{F-}$temp"
+
+echo $output $DIV;

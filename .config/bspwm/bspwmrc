@@ -3,22 +3,17 @@
 bspc config border_width        2
 bspc config window_gap          2
 
-i=1
 for monitor in $(bspc query -M); do
 bspc monitor $monitor \
-	-n $i \
-        -d $i/{i,ii,iii,iv,v,vi,vii,viii,ix,x}
-    let i++
+        -d $monitor/{i,ii,iii,iv,v,vi,vii,viii,ix,x}
 done
-NMON=$i
-unset i
 
-bspc config top_padding 15 
+bspc config top_padding 16 
 
 # Visual options
 bspc config split_ratio         0.50
-bspc config borderless_monocle  true
-bspc config gapless_monocle     true
+bspc config borderless_monocle  false
+bspc config gapless_monocle     false
 bspc config focus_follows_pointer true
 bspc config auto_alternate true
 bspc config auto_cancel true
@@ -30,19 +25,15 @@ bspc config urgent_border_color "#9f7155"
 bspc config focused_locked_border_color "#9a875f"
 bspc config normal_frame_opacity 0.0
 bspc config focused_frame_opacity 0.1
-
+bspc config remove_disabled_monitors true
+bspc config remove_unplugged_monitors true
 
 # Rules
-bspc rule -a Skype pseudo_tiled=on
-bspc rule -a Spotify pseudo_tiled=on
-bspc rule -a Thunar pseudo_tiled=on
-bspc rule -a Skype pseudo_tiled=on
-bspc rule -a File-roller pseudo_tiled=on
-bspc rule -a Transmission-gtk pseudo_tiled=on
 bspc rule -a Conky sticky=on manage=off lower=on
 bspc rule -a astime sticky=on
 bspc rule -a feh floating=on manage=off
 bspc rule -a steam desktop=^10
 
+compton --shadow-exclude 'n:a:Conky' -b &
 mpd &
 $HOME/.config/bspwm/panel/panel | $HOME/.config/bspwm/panel/clickable
