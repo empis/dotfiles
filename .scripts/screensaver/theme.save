@@ -1,0 +1,5 @@
+#!/bin/sh
+
+GIF=$HOME/Obrázky/archlinux.gif
+
+gifview --animate --geometry --min-delay 5 --window $XSCREENSAVER_WINDOW $GIF

@@ -21,6 +21,7 @@ case "$1" in
   'laptop')
     	$HOME/.screenlayout/laptop.sh
     	bspc monitor LVDS1 -d LVDS1/{i,ii,iii,iv,v,vi,vii,viii,ix,x}
+	hsetroot -fill $HOME/Obrázky/wallpaper.jpg &
     	$HOME/.config/bspwm/panel/notify %{F#32CD32}%{F-} Laptop
    	;;
   'vga')
@@ -30,11 +31,13 @@ case "$1" in
     	done
     	$HOME/.screenlayout/vga.sh
     	bspc monitor VGA1 -d VGA1/{i,ii,iii,iv,v,vi,vii,viii,ix,x}
+	hsetroot -fill $HOME/Obrázky/wallpaper.jpg &
     	$HOME/.config/bspwm/panel/notify %{F#32CD32}%{F-} External
     	;;
   'mirror')
     	xrandr --output "LVDS1" --auto --output "VGA1" --auto --same-as LVDS1 --output "DP1" --auto --same-as LVDS1
-    	$HOME/.config/bspwm/panel/notify %{F#32CD32}%{F-} Mirror
+    	hsetroot -fill $HOME/Obrázky/wallpaper.jpg &
+	$HOME/.config/bspwm/panel/notify %{F#32CD32}%{F-} Mirror
     	;;
   'normal')
 	if [[ `xrandr | grep " connected" | grep "VGA"` ]]; then
@@ -44,6 +47,7 @@ case "$1" in
 		bspc monitor $monitor \
 			        -d $monitor/{i,ii,iii,iv,v,vi,vii,viii,ix,x}
 	done
+	hsetroot -fill $HOME/Obrázky/wallpaper.jpg &
 	$HOME/.config/bspwm/panel/notify %{F#32CD32}%{F-} Normal
     	;;
   ''|'-h'|'--help')

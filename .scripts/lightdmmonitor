@@ -1,0 +1,12 @@
+#!/bin/bash
+# V-1.0 by Hanynowsky - April 2012. 
+# I am a very basic script that works around bug 874241 repprted in launchpad.
+
+XCOM0=`xrandr -q | grep 'VGA1 connected'`
+
+# if the external monitor is connected, then we tell XRANDR to set up an extended desktop
+if [ -n "$XCOM0" ] || [ ! "$XCOM0" = "" ]; then xrandr --output "VGA1" --auto --output "LVDS1" --off
+# if the external monitor is disconnected, then we tell XRANDR to output only to the laptop screen
+else xrandr --output "LVDS1" --auto --output "VGA1" --off
+fi
+exit 0;

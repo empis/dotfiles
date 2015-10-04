@@ -1,0 +1,6 @@
+#!/bin/sh
+
+GIF=$HOME/Obrázky/archlinux.gif
+GEOMETRY=$(xrandr | grep -w connected  | awk -F'[ +]' '{print $1,$3}' | grep -w $(bspc query -M -m) | awk  '{print $2}')
+
+gifview --animate --geometry $GEOMETRY --min-delay 5 --window $XSCREENSAVER_WINDOW $GIF

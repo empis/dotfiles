@@ -179,7 +179,7 @@ alt + Tab
 	{$HOME/.config/bspwm/panel/launcher_menu $HOME/.config/bspwm/panel/launcher_apps, pkill dzen2}
 
 alt + shift + v
-        dbus-launch nautilus --no-desktop --browser
+       thunar 
 
 alt + shift + m
 	ario
