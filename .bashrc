@@ -20,6 +20,9 @@ alias torrents='transmission-remote-cli -c xenogia:dot.dot.dot@z1lt0id.dontexist
 alias updategit="git push -u origin master"
 alias disk="dfc"
 alias v="vim"
+alias rpi="ssh empis@192.168.4.3"
+alias c="compile"
+alias skola="cd /home/empis/Dokumenty/Škola/C++/Zdrojové\ kódy/"
 # Color support
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
@@ -92,9 +95,26 @@ extract () {
      fi
 }
 
+#compile
+compile (){
+	filename=$(basename $1);
+	name=${filename%.*}
+	dir=$(dirname $1);
+	compiledir=$dir"/Compile/";
+	if !  [ -e $dir"/Compile" ]; then
+		mkdir $dir"/Compile/";
+	fi
+	case $1 in
+		*.cpp) g++ $1 -o $dir"/Compile/"$name;;
+
+	esac
+}
+
 #PS1="\[\e[01;31m\]┌─[\t]──[\[\e[01;31m\u\e[01;31m\]]──[\[\e[00;31m\]${HOSTNAME%%.*}\[\e[01;31m\]]:\w$\[\e[01;31m\]\n\[\e[01;37m\]└──\[\e[01;37m\](\[\e[32;1m\]\$(/bin/ls 
 #-1 | /usr/bin/wc -l | /bin/sed 's: ::g') files, \$(/usr/bin/ls -lah | /usr/bin/grep -m 1 total | /usr/bin/sed 
 #'s/total //')b\[\e[01;37m\])>>\[\e[0m\]"
 screenfetch
 #archinfo --Art=graffiti --art-color=cyan --label-color=white --data-color=green --set editor=vim
 
+# Yavide alias
+alias yavide="gvim --servername yavide -f -N -u /opt/yavide/.vimrc"

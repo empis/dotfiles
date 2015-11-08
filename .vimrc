@@ -1,166 +1,94 @@
-"	set number 				" turn on line numbers and highlight colors
-	set ruler 				" Always show current positions along the bottom
-	set showcmd 				" show the command being typed
-	set autoindent 				" autoindent spaces
-	set cursorline
-	set nocursorcolumn
-	set nocursorline
-	syntax sync minlines=256
+" Gotta be first
+set nocompatible
+
+let mapleader="\<Space>"
+
+filetype off
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'gmarik/Vundle.vim'
+" ----- Vim as a programmer's text editor -----------------------------
+Plugin 'scrooloose/nerdtree'
+Plugin 'jistr/vim-nerdtree-tabs'
+Plugin 'scrooloose/syntastic'
+Plugin 'xolox/vim-misc'
+Plugin 'xolox/vim-easytags'
+Plugin 'majutsushi/tagbar'
+Plugin 'vim-scripts/a.vim'
+" ----- Working with Git ----------------------------------------------
+Plugin 'airblade/vim-gitgutter'
+Plugin 'tpope/vim-fugitive'
+Plugin 'Raimondi/delimitMate'
+
+Plugin 'christoomey/vim-tmux-navigator'
+
+call vundle#end()
+
+filetype plugin indent on
+" ----- jistr/vim-nerdtree-tabs -----
+" Open/close NERDTree Tabs with \t
+nmap <silent> <leader>t :NERDTreeTabsToggle<CR>
+" To have NERDTree always open on startup
+let g:nerdtree_tabs_open_on_console_startup = 1
+
+" ----- scrooloose/syntastic settings -----
+let g:syntastic_error_symbol = '✘'
+let g:syntastic_warning_symbol = "▲"
+augroup mySyntastic
+  au!
+  au FileType tex let b:syntastic_mode = "passive"
+augroup END
+
+" ----- xolox/vim-easytags settings -----
+" Where to look for tags files
+set tags=./tags;,~/.vimtags
+" Sensible defaults
+let g:easytags_events = ['BufReadPost', 'BufWritePost']
+let g:easytags_async = 1
+let g:easytags_dynamic_files = 2
+let g:easytags_resolve_links = 1
+let g:easytags_suppress_ctags_warning = 1
+
+" ----- majutsushi/tagbar settings -----
+" Open/close tagbar with \b
+nmap <silent> <leader>b :TagbarToggle<CR>
+" Uncomment to open tagbar automatically whenever possible
+"autocmd BufEnter * nested :call tagbar#autoopen(0)
 
 
-"	inoremap ;; <esc>			" fbind ;; to esecape key 
-	set t_Co=16				" 256 colors 
-	nmap <C-h> <C-w>h			" control h, j, k, l tab navigation
-	nmap <C-j> <C-w>j
-	nmap <C-k> <C-w>k
-	nmap <C-l> <C-w>l
-	syntax enable
-	"let g:solarized_termcolors=256
-	"let g:solarized_termtrans=1
-	colorscheme default
-	set background=dark
-	"colors darkspectrum
-"	set nowrap
-"	set mouse=a 				" use mouse anywhere
-	set autoread 				" Set to auto read when a file is changed from the outside
+" ----- airblade/vim-gitgutter settings -----
+" Required after having changed the colorscheme
+hi clear SignColumn
+" In vim-airline, only display "hunks" if the diff is non-zero
+let g:airline#extensions#hunks#non_zero_only = 1
 
-	filetype plugin indent on
-	autocmd Filetype php setlocal sts=4 sw=4 expandtab
-	autocmd Filetype javascript setlocal sts=4 sw=4 expandtab
-	autocmd Filetype python setlocal sts=4 sw=4 expandtab
-	autocmd Filetype c setlocal sts=4 sw=4 expandtab
-	autocmd Filetype ruby setlocal sts=2 sw=2 expandtab
-	autocmd Filetype vcl setlocal sts=4 sw=4 expandtab
-	autocmd Filetype json setlocal sts=4 sw=4 expandtab
-	autocmd Filetype erb setlocal sts=4 sw=4 expandtab
-"	autocmd BufNewFile,BufReadPost *.md set filetype=markdown
-	au BufNewFile,BufRead *.md,*.markdown setlocal filetype=ghmarkdown
+" ----- Raimondi/delimitMate settings -----
+let delimitMate_expand_cr = 1
+augroup mydelimitMate
+  au!
+  au FileType markdown let b:delimitMate_nesting_quotes = ["`"]
+  au FileType tex let b:delimitMate_quotes = ""
+  au FileType tex let b:delimitMate_matchpairs = "(:),[:],{:},`:'"
+  au FileType python let b:delimitMate_nesting_quotes = ['"', "'"]
+augroup END
 
 
-" COLORS {
-	" syntax highlighting groups
-	hi Comment      ctermfg=7
-"	hi Constant     ctermfg=15 
-"	hi Identifier   ctermfg=4
-"	hi Statement    ctermfg=8
-"	hi PreProc      ctermfg=6
-"	hi Type         ctermfg=1
-"	hi Special      ctermfg=3
-"	hi Underlined   ctermfg=7
-"	hi Ignore       ctermfg=9
-"	hi Error        ctermfg=11
-"	hi Todo         ctermfg=1
-"	hi Normal ctermfg=none ctermbg=none
-"	hi NonText ctermfg=0 ctermbg=none
-"	hi Directory	ctermfg=12
-
-      hi VertSplit	ctermfg=0 ctermbg=none
-      hi StatusLine	ctermfg=0 ctermbg=none
-      hi StatusLineNC	ctermfg=0 ctermbg=none
-
-      hi Folded ctermbg=0 ctermfg=8
-
-	hi Pmenu ctermfg=7 ctermbg=0
-	hi PmenuSel ctermfg=0 ctermbg=15
-	hi LineNr ctermfg=0 ctermbg=none
-	hi CursorLine ctermfg=none ctermbg=none cterm=none
-	hi CursorLineNr ctermfg=none ctermbg=0 
-	hi CursorColumn ctermfg=none ctermbg=0
-"
-	" Syntax checker colors
-	highlight SignColumn ctermbg=none
-	hi SyntasticErrorSign ctermfg=1 ctermbg=none
-	hi SyntasticWarningSign ctermfg=3 ctermbg=none
-	hi SyntasticStyleErrorSign ctermfg=1 ctermbg=none
-	hi SyntasticStyleWarningSign ctermfg=3 ctermbg=none
-	hi SyntasticErrorLine ctermfg=none ctermbg=none
-	hi SyntasticWarningLine ctermfg=none ctermbg=none
-	hi SyntasticStyleErrorLine ctermfg=none ctermbg=none
-	hi SyntasticStyleWarningLine ctermfg=none ctermbg=none
-	hi SpellBad ctermfg=0 ctermbg=3
-	hi SpellCap ctermfg=0 ctermbg=1
-
-"}
-
-" PLUGINS
-	call pathogen#infect()
-	call pathogen#helptags()
-
-" NERDTREE
-	let NERDChristmasTree = 1
-	let NERDTreeHighlightCursorline = 1
-
-" VDEBUG
-	let g:vdebug_features = {'max_depth':2048}
-	let g:vdebug_options= {
-				\	"continuous_mode": 1,
-				\	"debug_window_level": 2,
-				\	"debug_file_level": 2,
-				\	"debug_file":"$HOME/vdebug.log"
-				\}
-
-" AIRLINE 
-	let g:airline_symbols = {}
-	let g:airline_left_sep = '⮀'
-	let g:airline_left_alt_sep = '⮁'
-	let g:airline_right_sep = '⮂'
-	let g:airline_right_alt_sep = '⮃'
-	let g:airline_symbols.branch = '⭠'
-	let g:airline_symbols.readonly = '⭤'
-	let g:airline_symbols.linenr = '⭡'
- 
-
-	" Fancy powerline symbols, needs a patched/edited font
-	let g:Powerline_symbols = 'fancy'
-	"
-	" " Use ∓ to indicate branches
-	"let g:Powerline_symbols_override = {
-	"     \ 'BRANCH': [0x2213],
-					 \ }
-" LIGHTLINE
-let g:lightline = {
-      \ 'colorscheme': 'wombat',
-      \ 'component': {
-      \   'readonly': '%{&readonly?"⭤":""}',
-      \ },
-      \ 'separator': { 'left': '⮀', 'right': '⮂' },
-      \ 'subseparator': { 'left': '⮁', 'right': '⮃' }
-      \ }
-
-" WORD PROCESSING {
-	set formatoptions=1
-	set lbr
-	set linebreak
-	set wrap
-	au BufRead,BufNewFile *.todo setfiletype todo
+" --- General Settings ---
+set ruler
+set number
+set showcmd
+set incsearch
+set hlsearch
+set mouse=a
+set ttymouse=xterm
 
 
-	cabbr wp call Wp()
-	fun! Wp()
-		set formatoptions=1
-		set lbr
-		set linebreak
-		set wrap
-		set nonumber
-		nnoremap j gj
-		nnoremap k gk
-		nnoremap 0 g0
-		nnoremap $ g$
-		set comments=s1:/*,mb:*,ex:*/,://,b:#,:%,:XCOMM,n:>,fb:-,fb:[+],fb:[x],fb:[-]
-		set comments +=fb:-
-		set spell spelllang=en_us
-
-	endfu
-
-	" Search for selected text, forwards or backwards.
-	vnoremap <silent> * :<C-U>
-	  \let old_reg=getreg('"')<Bar>let old_regtype=getregtype('"')<CR>
-	  \gvy/<C-R><C-R>=substitute(
-	  \escape(@", '/\.*$^~['), '\_s\+', '\\_s\\+', 'g')<CR><CR>
-	  \gV:call setreg('"', old_reg, old_regtype)<CR>
-	vnoremap <silent> # :<C-U>
-	  \let old_reg=getreg('"')<Bar>let old_regtype=getregtype('"')<CR>
-	  \gvy?<C-R><C-R>=substitute(
-	  \escape(@", '?\.*$^~['), '\_s\+', '\\_s\\+', 'g')<CR><CR>
-	  \gV:call setreg('"', old_reg, old_regtype)<CR>
-"}
+syntax on
+autocmd BufNewFile *.cpp
+ \ exe "normal O#include <iostream>\n\nusing namespace std;\n\nint main(){\n\<Tab>\n\<Tab>return 0;\n}\<Esc>1G"
+"Syntax color
+"hi String ctermfg=Red
+"hi PreProc ctermfg=Green
+"hi Statement ctermfg=DarkRed cterm=bold
